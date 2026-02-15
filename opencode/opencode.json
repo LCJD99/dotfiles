@@ -3,7 +3,7 @@
   "keybinds": {
     "messages_half_page_up": "ctrl+[",
     "messages_half_page_down": "ctrl+]",
-  }
+  },
   "provider": {
     "llama.cpp": {
       "npm": "@ai-sdk/openai-compatible",
