@@ -1,0 +1,2 @@
+# name|repo_url|branch
+superpowers|https://github.com/obra/superpowers.git|main
