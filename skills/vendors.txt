@@ -1,3 +1,3 @@
 # name|repo_url|branch
 superpowers|https://github.com/obra/superpowers.git|main
-notebooklm|https://github.com/PleasePrompto/notebooklm-skill.git|main
+notebooklm|https://github.com/PleasePrompto/notebooklm-skill.git|master
