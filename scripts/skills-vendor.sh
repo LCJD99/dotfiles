@@ -37,6 +37,12 @@ append_registry() {
   printf '%s|%s|%s\n' "$name" "$url" "$branch" >> "$REGISTRY_FILE"
 }
 
+commit_registry_update() {
+  local name="$1"
+  git add "$REGISTRY_FILE"
+  git commit -m "chore(skills): register vendor $name" -- "$REGISTRY_FILE"
+}
+
 sync_one() {
   local name="$1"
   local line
@@ -71,6 +77,7 @@ cmd_add() {
   fi
 
   append_registry "$name" "$url" "$branch"
+  commit_registry_update "$name"
   sync_one "$name"
 }
 
