@@ -1,0 +1,50 @@
+onboarding = false
+# Herdr keybindings adapted from ~/.tmux.conf
+# Prefix: Ctrl-a (same as tmux)
+
+[keys]
+prefix = "ctrl+a"
+
+# Session / config
+reload_config = "prefix+r"
+detach = "prefix+d"
+close_workspace = "prefix+shift+q"
+help = "prefix+?"
+toggle_sidebar = "prefix+ctrl+s"
+
+# Tabs
+new_tab = "prefix+c"
+previous_tab = "prefix+esc"       # tmux C-[ (terminal sends this as Escape)
+next_tab = "prefix+ctrl+]"         # tmux C-]
+close_tab = "prefix+shift+x"       # tmux X
+switch_tab = "prefix+1..9"
+
+# Panes
+split_vertical = "prefix+|"         # split right (tmux |)
+split_horizontal = "prefix+minus"   # split down (tmux -)
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+swap_pane_down = "prefix+ctrl+o"
+zoom = "prefix+plus"
+close_pane = "prefix+x"
+
+# Prefix + Ctrl+direction resizes in the same direction as tmux.
+resize_pane_up = "prefix+ctrl+k"
+resize_pane_left = "prefix+ctrl+h"
+resize_pane_right = "prefix+ctrl+l"
+resize_pane_down = "prefix+ctrl+j"
+# Use the direct resize bindings above instead of a separate resize mode.
+resize_mode = ""
+
+# Copy mode (tmux H; Herdr's copy mode remains live and supports vi keys)
+copy_mode = "prefix+shift+h"
+
+[ui]
+# Keep Herdr mouse interactions enabled.
+mouse_capture = true
+
+[theme]
+name = "catppuccin-latte"
+auto_switch = false
